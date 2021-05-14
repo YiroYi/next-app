@@ -1,13 +1,18 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const ClientsPage = () => {
-  const router = useRouter();
-
-  const projectId = router.query
 
   return(
     <div>
-      <h1>The Clients Page`${projectId}`</h1>
+      <h1>The Clients Page</h1>
+      <ul>
+        <li>
+          <Link href="/clients/yiro">Yiro</Link>
+        </li>
+        <li>
+          <Link href="/clients/yujin">Yujin</Link>
+        </li>
+      </ul>
     </div>
   );
 }
