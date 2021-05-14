@@ -1,15 +1,15 @@
 import { useRouter } from 'next/router';
 
-const PortfolioPage = () => {
+const ClientsPage = () => {
   const router = useRouter();
 
   const projectId = router.query
 
   return(
     <div>
-      <h1>The Portfolio Page`${projectId}`</h1>
+      <h1>The Clients Page`${projectId}`</h1>
     </div>
   );
 }
 
-export default PortfolioPage;
+export default ClientsPage;
